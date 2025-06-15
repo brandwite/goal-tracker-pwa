@@ -33,9 +33,9 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="w-full h-3/4 mx-auto mt-8 bg-white dark:bg-gray-900 rounded-3xl shadow-2xl overflow-hidden border-2 border-transparent flex flex-col items-center">
+    <div className="w-full mx-auto mt-8 bg-white dark:bg-gray-900 rounded-3xl shadow-2xl overflow-hidden border-2 border-transparent flex flex-col items-center">
       {/* Logo */}
-      <div className="flex items-center justify-center h-20 w-full px-6 border-b border-gray-100/70 dark:border-gray-800/40">
+      <div className="flex items-center justify-center h-20 w-full p-6 border-b border-gray-100/70 dark:border-gray-800/40">
         <span className="font-extrabold text-2xl tracking-tight text-gray-900 dark:text-white uppercase"><span className="text-pink-500/80">Goal</span><span className="text-blue-500/80">Tracker</span></span>
       </div>
       {/* User Info */}

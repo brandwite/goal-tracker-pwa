@@ -17,9 +17,7 @@ const withPWA = withPWAInit({
     //...
 });
 
-const nextConfig = {
-    devIndicators: { buildActivity: false },
-};
+const nextConfig = {};
 
 export default withPWA(nextConfig);
 

@@ -75,7 +75,7 @@ export default function RootLayout({
           <div className="w-full h-full bg-gradient-to-tr from-purple-900/70 via-blue-800/70 to-pink-700/70 dark:from-purple-900 dark:via-blue-800 dark:to-pink-700/50 rounded-b-3xl" />
         </div>
 
-        <div className="flex flex-row h-screen gap-4 md:gap-8 p-2 md:p-4 relative z-10">
+        <div className="flex flex-row h-screen gap-4 md:gap-8 p-2 md:p-4 relative z-10 mb-14">
           {/* Sidebar - Hidden on mobile */}
           <div className="hidden md:block">
             <Sidebar />
