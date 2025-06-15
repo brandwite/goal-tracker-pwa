@@ -1,7 +1,25 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+import withPWAInit from "@ducanh2912/next-pwa";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withPWA = withPWAInit({
+    dest: "public",
+    cacheOnFrontEndNav: true,
+    aggressiveFrontEndNavCaching: true,
+    reloadOnOnline: true,
+    disable: false,
+    workboxOptions: {
+        disableDevLogs: true,
+    },
+    // disable: process.env.NODE_ENV === "development",
+    // register: true,
+    // scope: "/app",
+    // sw: "service-worker.js",
+    //...
+});
+
+const nextConfig = {
+    devIndicators: { buildActivity: false },
 };
 
-export default nextConfig;
+export default withPWA(nextConfig);
+
